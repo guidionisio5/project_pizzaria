@@ -25,11 +25,20 @@ h2 {
     font-weight: 200;
 }
 
+/* after = permite que qualquer conteúdo seja adicionado depois da tag onde ele for aplicado */
+h2:after {
+    display: block;
+    background-color: #078C31;
+    height: 5px;
+    width: 100px;
+    margin: 40px auto 30px;
+    content: "";
+}
+
 p, li, a {
     font-family: 'Open Sans', sans-serif;
     color: #404040;
 }
-
 
 /* ELEMENTOS DO HEADER */
 
@@ -55,3 +64,34 @@ header div#chamada a{
     border-radius: 50px;
     display: inline-block;
 }
+
+/* SEÇÃO - FINAL DE SEMANA */
+
+div.pontos-chaves h4 {
+    color: #404040;
+}
+
+div.pontos-chaves h4:after {
+    display: block;
+    background-color: #078C31;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: "";
+}
+
+/* SEÇÃO - PIZZA */
+
+section#pizza p.destaque {
+    color: #FFF;
+    width: 40%;
+}
+
+section#pizza ul li {
+    color: #FFF;
+    list-style: none;
+    line-height: 1.9;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
