@@ -1,98 +1,119 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/typography.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout-tablet.css" media="screen and (max-width:1024px)">
+    <link rel="stylesheet" href="css/layout-mobile.css" media="screen and (max-width:764px)">
+
     <title>Pizzaria Donatella</title>
 </head>
 
 <body>
+
     <nav>
-        <ul id="esquerda">
-            <li><a href="#">DESCONTOS ESPECIAIS</a></li>
-            <li><a href="#">SABORES</a></li>
-            <li><a href="#">DEPOIMENTOS</a></li>
-            <li><a href="#">PLANOS MENSAIS</a></li>
+        <ul class="esquerda">
+            <li><a href="">DESCONTOS ESPECIAIS</a></li>
+            <li><a href="">SABORES</a></li>
+            <li><a href="">DEPOIMENTOS</a></li>
+            <li><a href="">PLANOS MENSAIS</a></li>
         </ul>
-        <ul id="direita">
-            <li><a id="criar-conta" href="#">CRIAR CONTA</a></li>
-            <ion-icon name="person-circle-outline"></Ion-icon>
+
+        <ul class="direita">
+            <li><a class="criar-conta" href="">CRIAR CONTA</a></li>
+            <ion-icon name="person-circle-outline"></ion-icon>
         </ul>
     </nav>
+
     <header>
-        <div id="chamada">
+        <div class="chamada">
             <h1>A MELHOR PIZZA DA REGIÃO</h1>
-            <h4>Sua Pizza como você quiser e sem atraso</h4>
-            <a href="#">ESCOLHA SEU PLANO DE ENTREGAS</a>
+            <h4>Sua pizza como você quiser e sem atraso</h4>
+            <a href="">ESCOLHA SEU PLANO DE ENTREGAS</a>
         </div>
     </header>
 
-    <section id="final-semana">
-        <div id="final-semana-esquerda">
+    <section class="final-de-semana">
+        <div class="final-de-semana-esquerda">
             <div class="folha1"></div>
             <div class="camarao"></div>
             <div class="folha2"></div>
         </div>
 
-        <div id="final-semana-centro">
+        <div class="final-de-semana-centro">
             <h2>Seu Final de Semana Perfeito</h2>
-            <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Officia fugiat veritatis dignissimos quidem, tempora unde beatae molestiae
-                totam sit cum sequi itaque perspiciatis quisquam animi officiis dolores iste similique quod.
-            </p>
-            <div id="pontos-chaves-mestre">
+            <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptatibus iure dolor
+                veritatis dolorem atque similique quia quae sapiente magni? Ipsum earum minima est? Deserunt minus
+                quibusdam hic accusamus alias?</p>
+
+            <div class="pontos-chaves-mestre">
                 <div class="pontos-chaves">
                     <ion-icon name="people-outline"></ion-icon>
                     <h4>Entrega</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut officia cupiditate accusantium ad
-                        ratione eos vel quam impedit odit reprehenderit, facere temporibus commodi facilis voluptate
-                        optio tenetur fuga laudantium nemo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate culpa perspiciatis,
+                        debitis
+                        a dignissimos unde incidunt doloremque et, labore veritatis voluptates quis iste nostrum,
+                        numquam
+                        reprehenderit. Nobis, cum rerum.</p>
                 </div>
 
                 <div class="pontos-chaves">
                     <ion-icon name="time-outline"></ion-icon>
                     <h4>Rapidez</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, fuga voluptate! Dignissimos
-                        ratione, sapiente excepturi, voluptatum itaque ipsam explicabo officia libero fuga quia
-                        repudiandae iusto enim accusamus pariatur eaque dolor?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate culpa perspiciatis,
+                        debitis
+                        a dignissimos unde incidunt doloremque et, labore veritatis voluptates quis iste nostrum,
+                        numquam
+                        reprehenderit. Nobis, cum rerum.</p>
                 </div>
 
                 <div class="pontos-chaves">
                     <ion-icon name="card-outline"></ion-icon>
-                    <h4>Preços</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci placeat sint veniam
-                        ea. Ducimus mollitia distinctio alias beatae possimus atque amet? Alias non nostrum consequatur
-                        debitis! Nisi, nostrum perspiciatis.</p>
+                    <h4>Preço</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate culpa perspiciatis,
+                        debitis
+                        a dignissimos unde incidunt doloremque et, labore veritatis voluptates quis iste nostrum,
+                        numquam
+                        reprehenderit. Nobis, cum rerum.</p>
                 </div>
             </div>
         </div>
-        <div id="final-semana-direita">
+        <!-- ==================================================================================================================================== -->
+        <div class="final-de-semana-direita">
             <div class="folha3"></div>
             <div class="tomate"></div>
             <div class="queijo"></div>
         </div>
+
     </section>
-    <section id="pizza">
-        <h2>SUA PIZZA A SUA MANEIRA E COM A RAPIDEZ DE SEMPRE</h2>
+
+    <section class="pizza">
+        <h2>SUA PIZZA A SUA MANEIRA E COM RAPIDEZ DE SEMPRE</h2>
         <p class="destaque">
-            Massa alta, massa fina, massa com fermento, sem fermeto, integral ou sem gluten. Ninguem sabe fazer a sua
-            pizza como nós. Temos mais de 100 combinações para você escolher como chegará sua pizza.
+            Massa alta, massa fina, massa com fermento,
+            sem fermento , integral ou sem gluten.
+            Ninguem sabe fazer a sua pizza como nós.
+            Temos mais de 100 combinações para você
+            escolher como chegará sua pizza.
         </p>
-        <div id="pizza-opcoes-mestre">
+
+        <div class="opcoes-mestre">
             <div class="pizza-opcoes">
                 <h4>Sabores Tradicionais</h4>
                 <ul>
-                    <li>Pepporoni</li>
+                    <li>Pepperoni</li>
                     <li>Mussarela</li>
                     <li>Portuguesa</li>
                     <li>Bauru</li>
-                    <li>Napolitana</li>
+                    <li>Napolitano</li>
                 </ul>
             </div>
             <div class="pizza-opcoes">
@@ -100,7 +121,7 @@
                 <ul>
                     <li>Camarão</li>
                     <li>4 Queijos</li>
-                    <li>Margherita</li>
+                    <li>Margheritas</li>
                     <li>Supreme</li>
                     <li>Mussarela de Bufallo</li>
                 </ul>
@@ -111,14 +132,14 @@
                     <li>Tradicional</li>
                     <li>Fina</li>
                     <li>Pan</li>
-                    <li>Integral</li>
+                    <li>integral</li>
                     <li>Sem Gluten</li>
                 </ul>
             </div>
             <div class="pizza-opcoes">
                 <h4>Bordas</h4>
                 <ul>
-                    <li>Sem Recheio</li>
+                    <li>Sem recheio</li>
                     <li>Catupiry</li>
                     <li>Cream Cheese</li>
                     <li>Especial da Casa</li>
@@ -145,48 +166,142 @@
             </div>
         </div>
     </section>
-    <section id="testemunha">
-        <h2>
-            Andam Falando de Nós...
-        </h2>
-        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit, dolorum molestias
-            eum odio natus sed quidem dolore architecto minus officiis recusandae ea saepe et doloremque provident,
-            possimus aliquam eos.
-        </p>
-        <div id="testemunha-mestre">
-            <div id="testemunha-esquerda">
+
+    <section class="testemunha">
+        <h2>Andam falando de nós...</h2>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus, inventore laudantium
+            dolor culpa, voluptas, cupiditate tempore ad nisi quaerat officia rerum optio? Illo sapiente cupiditate
+            assumenda harum. A, laborum.</p>
+
+        <div class="testemunha-mestre">
+            <div class="testemunha-esquerda">
                 <ion-icon name="arrow-back-circle-outline"></ion-icon>
             </div>
-            <div id="testemunha-centro">
-                <div id="testemunhos">
+
+            <div class="testemunha-centro">
+                <div class="testemunhos">
                     <ul>
-                        <li><img src="img/secao11-depoimento-1.jpg"></li>
+                        <li><img src="/img/secao11-depoimento-1.jpg" alt=""></li>
                         <li>
-                            <h5>Vitória</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nihil!</p>
+                            <h5>Maicon Borelli</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reprehenderit deserunt
+                                nisi adipisci tenetur.</p>
                         </li>
                     </ul>
+
                     <ul>
-                        <li><img src="img/secao11-depoimento-2.jpg"></li>
+                        <li><img src="/img/secao11-depoimento-2.jpg" alt=""></li>
                         <li>
-                            <h5>Victor</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, dicta.</p>
+                            <h5>Faker</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat architecto vel
+                                quisquam animi</p>
                         </li>
                     </ul>
+
                     <ul>
-                        <li><img src="img/secao11-depoimento-3.jpg"></li>
+                        <li><img src="/img/secao11-depoimento-3.jpg" alt=""></li>
                         <li>
-                            <h5>Joana</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ad.</p>
+                            <h5>Bruno careca</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolore rem dignissimos
+                                in eaque qugafga</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div id="testemunha-direita">
+            <div class="testemunha-direita">
                 <ion-icon name="arrow-forward-circle-outline"></ion-icon>
             </div>
         </div>
+
     </section>
+
+    <div class="transicao-testemunha-plano">
+        <div class="decoracao1"></div>
+        <div class="decoracao2"></div>
+        <div class="decoracao3"></div>
+    </div>
+
+    <section class="plano-principal">
+        <h2>ESCOLHA SEU PLANO</h2>
+        <div class="planos-janela">
+
+            <div class="planos">
+                <div class="planos-top">
+                    <h4>Plano Ouro</h4>
+                    <p><strong>2 entregas por mês</strong></p>
+                    <ul>
+                        <li>2 Pizzas grandes e sua escolha</li>
+                        <li>2 Refris de 2L a sua escolha</li>
+                        <li>Entrega Gratuita</li>
+                        <li>Dias e Horários a sua escolha</li>
+                        <p><strong>R$ 40,00</strong></p>
+                    </ul>
+                </div>
+                <div class="planos-bottom">
+                    <p>ASSINAR</p>
+                </div>
+            </div>
+
+            <div class="planos">
+                <div class="planos-top">
+                    <h4>Plano Platinum</h4>
+                    <p><strong>4 entregas por mês</strong></p>
+                    <ul>
+                        <li>4 pizzas grandes a sua escolha.</li>
+                        <li>4 Refris de 2L a sua escolha</li>
+                        <li>Entrega Gratuita</li>
+                        <li>Dias e Horários a sua escolha</li>
+                        <p><strong>R$ 80,00</strong></p>
+                    </ul>
+                </div>
+                <div class="planos-bottom">
+                    <p>ASSINAR</p>
+                </div>
+            </div>
+
+            <div class="planos">
+                <div class="planos-top">
+                    <h4>Plano Black</h4>
+                    <p><strong>6 entregas por mês</strong></p>
+                    <ul>
+                        <li>6 pizzas grandes a sua escolha.</li>
+                        <li>6 Refris de 2L a sua escolha</li>
+                        <li>Entrega Gratuita</li>
+                        <li>Dias e Horários a sua escolha</li>
+                        <p><strong>R$ 120,00</strong></p>
+                    </ul>
+                </div>
+                <div class="planos-bottom">
+                    <p>ASSINAR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="transicao-plano-rodape"></div>
+    <footer>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.0932494988606!2d-46.79844388443473!3d-21.96938391061729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9cb64d2bf37bd%3A0x853556d1c9990015!2sR.%20Ademar%20de%20Barros%2C%2080%20-%20Centro%2C%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista%20-%20SP%2C%2013870-080!5e0!3m2!1spt-BR!2sbr!4v1620149922476!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="info">
+            <h4>Endereço e Telefone</h4>
+            <ul>
+                <li>RUA ADEMAR DE BARROS, 80</li>
+                <li>SJBV-SP</li>
+                <li>CEP:13870-080</li>
+                <li>Fone: (19)3633-1111</li>
+            </ul>
+
+            <div class="redes-sociais">
+                <ion-icon class="facebook" name="logo-facebook"></ion-icon>
+                <ion-icon class="facebook" name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+        </div>
+        <div class="pizza-rodape-decoracao"></div>
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/script.js"></script>

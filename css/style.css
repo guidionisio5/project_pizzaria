@@ -15,18 +15,16 @@ nav {
 
 nav ul {
     display: flex;
-    /* flex-flow é a forma abreviada de flex-direction(define como os filhos seerão exibidos, em linhas ou colunas) e flex-wrap(define se os filhos quebrarão de linha caso não caibam na tela) */
     flex-flow: row wrap;
-    /* Altera o alinhamento horiozntal do elementos filhos */
     justify-content: left;
     margin-top: 70px;
 }
 
-nav ul#esquerda {
+nav .esquerda {
     float: left;
 }
 
-nav ul#direita {
+nav .direita {
     float: right;
 }
 
@@ -35,53 +33,51 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFF;
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 100px;
     font-size: 80%;
 }
 
-nav ul li a#criar-conta {
-    border: 1px solid #FFF;
+nav ul li a.criar-conta {
+    border: 1px solid #fff;
     padding: 9px 29px;
 }
 
 nav ul li a:hover {
-    background-color: #f2b705;
+    background-color: #F2B705;
     transition-duration: 0.8s;
 }
 
-/* quando o icone for do ionic icons, para aumentar ou diminuir seu tamanho utilize width e height */
 nav ion-icon {
     width: 45px;
     height: 45px;
-    color: #FFF;
+    color: white;
     margin-top: -10px;
     margin-left: 20px;
 }
 
 nav ion-icon:hover {
-    color: #f2b705;
+    color: #F2B705;
     cursor: pointer;
 }
 
 section {
-    padding: 55px 0 80px;
+    padding: 55px 0px 80px;
 }
 
 header {
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)), url(../img/secao08-background-capa.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('/img/secao08-background-capa.jpg');
+    background-size: cover;
     width: 100%;
     height: 1024px;
-    background-size: cover;
-    /* alinha a imagem no centro na horizontal e na vertical */
     background-position: center center;
-    border-top: 5px solid #078C31;
+    border-top: 5px solid #07BC31;
 }
 
-header div#chamada {
+header div.chamada {
     position: relative;
     width: 100%;
     height: 300px;
@@ -90,33 +86,29 @@ header div#chamada {
     left: auto;
 }
 
-
-/* SEÇÃO - FINAL DE SEMANA */
-
-section#final-semana {
+section.final-de-semana {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-div#final-semana-esquerda, div#final-semana-direita {
+div.final-de-semana-esquerda,
+div.final-de-semana-direita {
     position: relative;
     width: 15%;
 }
 
-div#final-semana-centro {
+div.final-de-semana-centro {
     width: 65%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    /* alinhamento dos elementos filhos na horizontal */
     justify-content: flex-start;
-    /* alinhamento dos elementos filhos na vertical */
     align-items: center;
 }
 
-div#pontos-chaves-mestre {
+div.pontos-chaves-mestre {
     width: 100%;
     margin-top: 40px;
     display: flex;
@@ -125,51 +117,54 @@ div#pontos-chaves-mestre {
 }
 
 div.pontos-chaves {
-    text-align: center;
     width: 25%;
+    text-align: center;
 }
 
-section#final-semana div.pontos-chaves ion-icon {
+section.final-de-semana div.pontos-chaves ion-icon {
     width: 75px;
     height: 75px;
-    color: #F03733;
+    color: red;
 }
 
 div.folha1 {
     position: absolute;
     top: 40px;
     left: 40px;
-    width: 150px;
-    height: 150px;
-    background-image: url(../img/secao09-folha1.png);
+    background-image: url(/img/secao09-folha1.png);
     background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
 }
 
 div.camarao {
     position: absolute;
     top: 250px;
     left: 0;
-    width: 150px;
+    background-image: url(/img/secao09-camarao.jpg);
+    background-repeat: no-repeat;
     height: 150px;
-    background: url(../img/secao09-camarao.jpg) no-repeat;
+    width: 150px;
 }
 
 div.folha2 {
     position: absolute;
     top: 500px;
     left: 50px;
-    width: 150px;
+    background-image: url(/img/secao09-folha2.png);
+    background-repeat: no-repeat;
     height: 150px;
-    background: url(../img/secao09-folha2.png) no-repeat;
+    width: 150px;
 }
 
 div.folha3 {
     position: absolute;
     top: 100px;
     left: 20px;
-    width: 160px;
+    background-image: url(/img/secao09-folha3.png);
+    background-repeat: no-repeat;
     height: 150px;
-    background: url(../img/secao09-folha3.png) no-repeat;
+    width: 160px;
 }
 
 div.tomate {
@@ -178,7 +173,7 @@ div.tomate {
     left: 100px;
     width: 160px;
     height: 150px;
-    background: url(../img/secao09-tomate.png) no-repeat;
+    background: url(/img/secao09-tomate.png) no-repeat;
 }
 
 div.queijo {
@@ -187,13 +182,14 @@ div.queijo {
     left: 10px;
     width: 160px;
     height: 150px;
-    background: url(../img/secao09-queijo.jpg) no-repeat;
+    background: url(/img/secao09-queijo.jpg) no-repeat;
 }
 
-/* SEÇÃO - PIZZA */
 
-section#pizza {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(../img/secao10-background-secao-pizza.jpg);
+/* sessao cardapio */
+
+section.pizza {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(/img/secao10-background-secao-pizza.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -202,7 +198,7 @@ section#pizza {
     align-items: center;
 }
 
-div#pizza-opcoes-mestre {
+div.opcoes-mestre {
     width: 80%;
     margin-top: 30px;
     display: flex;
@@ -215,15 +211,9 @@ div.pizza-opcoes {
     margin: 5px 0;
 }
 
-/* SEÇÃO - DEPOIMENTOS */
-
-section#testemunha {
+section.testemunha{
     width: 100%;
-    background-image: linear-gradient(
-        rgba(255,255,255,1), 
-        rgba(255,255,255,0.8), 
-        rgba(255,255,255,1)), 
-        url(../img/secao11-background-secao-depoimento.png);
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,1)), url(../img/secao11-background-secao-depoimento.png);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -231,74 +221,224 @@ section#testemunha {
     align-items: center;
 }
 
-div#testemunha-mestre {
+div.testemunha-mestre{
     width: 100%;
     height: 300px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-div#testemunha-esquerda, div#testemunha-direita {
+div.testemunha-esquerda, div.testemunha-direita{
     width: 15%;
     height: 300px;
     cursor: pointer;
-
 }
 
-div#testemunha-mestre ion-icon {
+div.testemunha-mestre ion-icon{
     width: 90%;
     height: 90%;
-    color: #F03733;
+    color: #f03733;
 }
 
-div#testemunha-esquerda ion-icon {
+
+div.testemunha-esquerda ion-icon{
     opacity: 0.5;
 }
 
-div#testemunha-centro {
+div.testemunha-centro{
     width: 70%;
     margin: 0 auto;
-    height: 300px;
+    height: 400px;
     position: relative;
     max-width: 1010px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
-div#testemunhos {
+div.testemunhos{
     position: absolute;
     left: 0;
     width: 2680px;
 }
 
-section#testemunha div#testemunha-centro div#testemunhos ul {
-    /* inline = converte um elemento de bloco para um elemento de linha */
+section.testemunha div.testemunha-centro div.testemunhos ul {
     display: inline-table;
     width: 300px;
-    background: #FFF;
+    background-color: #fff;
     padding: 30px;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     text-align: center;
+    border-radius: 5px;
+    margin:50px 15px; 
 }
 
-section#testemunha div#testemunha-centro div#testemunhos ul li {
+section.testemunha div.testemunha-centro div.testemunhos ul li{
     list-style: none;
     display: inline-table;
     width: 90%;
     margin: 0;
 }
 
-section#testemunha div#testemunha-centro div#testemunhos ul h5 {
+section.testemunha div.testemunha-centro div.testemunhos ul h5{
     font-size: 140%;
 }
 
-section#testemunha div#testemunha-centro div#testemunhos ul p {
+section.testemunha div.testemunha-centro div.testemunhos ul p{
     line-height: 1.5;
     color: #404040;
     font-size: 90%;
 }
 
-section#testemunha div#testemunha-centro div#testemunhos ul img {
+section.testemunha div.testemunha-centro div.testemunhos ul img{
     width: 40%;
     border-radius: 100%;
     margin-top: -80px;
     margin-bottom: 20px;
-    border: 5px solid #F03733;
+    border: 5px solid #f03733;
+}
+
+/* SEÇÃO -TRANSICAO 1 */
+div.transicao-testemunha-plano{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.transicao-testemunha-plano .decoracao1{
+    width: 30%;
+    height: 100%;
+    background-image: url(/img/secao13-tomate-manjericao-alho.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transicao-testemunha-plano .decoracao2{
+    width: 30%;
+    height: 100%;
+    background-image: url(/img/secao13-azeite.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transicao-testemunha-plano .decoracao3{
+    width: 30%;
+    height: 100%;
+    background-image: url(/img/secao13-detalhe-tomate.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+}
+
+.plano-principal{
+    width: 100%;
+    height: 800px;
+}
+
+.planos-janela{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.planos{
+    width: 250px;
+    height: 450px;
+    margin: 80px 30px;
+}
+
+.planos-top{
+    width: 100%;
+    height: 350px;
+    background-color: #f7f7f7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+.planos-bottom{
+    width: 100%;
+    height: 100px;
+    background-color: #07BC31;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 3px #ccc;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+
+div.transicao-plano-rodape {
+    width: 100%;
+    height: 36px;
+    background-image: linear-gradient(
+        rgba(255,255,255,1),
+        rgba(255,255,255,0.5)),
+        url(../img/secao15-mesa-xadrez-clara.png);
+        background-repeat: repeat-x;
+        margin-top: 100px;
+}
+
+footer {
+    padding-top: 36px;
+    padding-left: 36px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/secao15-mesa-xadrez.png);
+    background-repeat: repeat;
+    border-bottom: 10px solid #f03733;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer div.mapa {
+    width: 35%;
+    height: 390px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px #404040;
+}
+
+footer div.info {
+    width: 30%;
+    height: 390px;
+    background-color: #f03733;
+    box-shadow: 0 3px 10px #404040;
+}
+
+footer div.redes-sociais {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    /* flex-flow: row wrap = define que os elementos serão organizados em linha e que quebrarão de linha quando não estiverem cabendo na tela */
+    flex-flow: row wrap;
+    /* justify-content: space-evenly = aplica um espaçamneto entre os elementos filho pegando o espaço que resta no pai e aplicando uma média entre os elementos */
+    justify-content: space-evenly;
+}
+
+footer div.redes-sociais ion-icon {
+    color: #fff;
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+}
+
+footer div.redes-sociais ion-icon:hover {
+    color: #F2B705;
+}
+
+footer div.pizza-rodape-decoracao {
+    width: 300px;
+    height: 390px;
+    margin-top: -100px;
+    background-image: url(../img/secao15-pizza-rodape.png);
+    background-repeat: no-repeat;
 }
