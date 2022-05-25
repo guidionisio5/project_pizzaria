@@ -1,10 +1,10 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav {
+nav{
     width: 95%;
     height: 150px;
     position: absolute;
@@ -13,18 +13,22 @@ nav {
     z-index: 9999;
 }
 
-nav ul {
+nav ul{
     display: flex;
+    /* flex-flow é a forma abreviada de flex-direction
+    (define como os filhos serão exibidos,em linhas ou colunas
+     e flex-wrap (define se os filhos quebrarão de linha caso não caibam na tela */
     flex-flow: row wrap;
     justify-content: left;
+    /* justify-content altera o alinhamento horizontal dos elementos filhos  */
     margin-top: 70px;
 }
 
-nav .esquerda {
+nav ul#esquerda{
     float: left;
 }
 
-nav .direita {
+nav ul#direita{
     float: right;
 }
 
@@ -32,83 +36,90 @@ nav ul li {
     list-style: none;
 }
 
-nav ul li a {
-    color: white;
+nav ul li a{
+    color: #FFF;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 100px;
     font-size: 80%;
 }
 
-nav ul li a.criar-conta {
+nav ul li a#criar-conta{
     border: 1px solid #fff;
     padding: 9px 29px;
 }
 
-nav ul li a:hover {
+nav ul li a:hover{
     background-color: #F2B705;
     transition-duration: 0.8s;
 }
 
-nav ion-icon {
+/* Quando o ícone for do ionic icons, para aumentar ou 
+diminuir seu tamanho utilize width e heigt  */
+
+nav ion-icon{
     width: 45px;
     height: 45px;
-    color: white;
+    color: #FFF;
     margin-top: -10px;
     margin-left: 20px;
 }
 
-nav ion-icon:hover {
+nav ion-icon:hover{
     color: #F2B705;
     cursor: pointer;
 }
 
-section {
-    padding: 55px 0px 80px;
+section{
+    padding: 55px 0 80px;
 }
 
-header {
+header{
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('/img/secao08-background-capa.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)),url(../img/secao08-background-capa.jpg);
     background-size: cover;
+    background-position: center center;
     width: 100%;
     height: 1024px;
-    background-position: center center;
-    border-top: 5px solid #07BC31;
+    border-top: 5px solid #078C31;
 }
 
-header div.chamada {
+header div#chamada{
     position: relative;
     width: 100%;
     height: 300px;
     text-align: center;
     top: 30%;
+    /* centraliza o elemento ao centro na horizontal */
     left: auto;
 }
 
-section.final-de-semana {
+/* seção final de semana  */
+
+section#final-de-semana{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-div.final-de-semana-esquerda,
-div.final-de-semana-direita {
+div#final-semana-esquerda, div#final-semana-direita{
     position: relative;
     width: 15%;
 }
 
-div.final-de-semana-centro {
+div#final-semana-centro{
     width: 65%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    /* alinhamento dos elementos filhos na horizontal */
     justify-content: flex-start;
+    /* alinhamento dos elementos filhos na vertical */
     align-items: center;
 }
 
-div.pontos-chaves-mestre {
+div#pontos-chaves-mestre{
     width: 100%;
     margin-top: 40px;
     display: flex;
@@ -116,80 +127,77 @@ div.pontos-chaves-mestre {
     justify-content: space-between;
 }
 
-div.pontos-chaves {
-    width: 25%;
+div.pontos-chaves{
     text-align: center;
+    width: 25%;
 }
 
-section.final-de-semana div.pontos-chaves ion-icon {
+section#final-de-semana div.pontos-chaves ion-icon{
     width: 75px;
     height: 75px;
     color: red;
+
 }
 
-div.folha1 {
+div.folha1{
     position: absolute;
     top: 40px;
     left: 40px;
-    background-image: url(/img/secao09-folha1.png);
+    background-image: url(../img/secao09-folha1.png);
     background-repeat: no-repeat;
-    height: 150px;
     width: 150px;
+    height: 150px;
 }
 
-div.camarao {
+div.camarao{
     position: absolute;
     top: 250px;
     left: 0;
-    background-image: url(/img/secao09-camarao.jpg);
-    background-repeat: no-repeat;
-    height: 150px;
+    background: url(../img/secao09-camarao.jpg) no-repeat;
     width: 150px;
+    height: 150px;
 }
 
-div.folha2 {
+div.folha2{
     position: absolute;
     top: 500px;
     left: 50px;
-    background-image: url(/img/secao09-folha2.png);
-    background-repeat: no-repeat;
-    height: 150px;
+    background: url(../img/secao09-folha2.png)no-repeat;
     width: 150px;
+    height: 150px;
 }
 
-div.folha3 {
+div.folha3{
     position: absolute;
     top: 100px;
     left: 20px;
-    background-image: url(/img/secao09-folha3.png);
-    background-repeat: no-repeat;
-    height: 150px;
+    background: url(../img/secao09-folha3.png)no-repeat;
     width: 160px;
+    height: 150px;
 }
 
-div.tomate {
+div.tomate{
     position: absolute;
     top: 300px;
-    left: 100px;
+    left: 80px;
+    background: url(../img/secao09-tomate.png)no-repeat;
     width: 160px;
     height: 150px;
-    background: url(/img/secao09-tomate.png) no-repeat;
 }
 
-div.queijo {
+div.queijo{
     position: absolute;
     top: 600px;
     left: 10px;
     width: 160px;
     height: 150px;
-    background: url(/img/secao09-queijo.jpg) no-repeat;
+    background: url(../img/secao09-queijo.jpg)no-repeat;
 }
 
-
-/* sessao cardapio */
-
-section.pizza {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(/img/secao10-background-secao-pizza.jpg);
+/* SEÇÃO PIZZA */
+section#pizza{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)),
+    url(../img/secao10-background-secao-pizza.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -198,22 +206,27 @@ section.pizza {
     align-items: center;
 }
 
-div.opcoes-mestre {
+div#pizza-opcoes-mestre{
     width: 80%;
     margin-top: 30px;
     display: flex;
     flex-flow: row wrap;
 }
 
-div.pizza-opcoes {
+div.pizza-opcoes{
     width: 33.3%;
     text-align: center;
     margin: 5px 0;
 }
 
-section.testemunha{
+
+section#testemunha{
     width: 100%;
-    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,1)), url(../img/secao11-background-secao-depoimento.png);
+    background-image: linear-gradient(
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,1)),
+     url(../img/secao11-background-secao-depoimento.png);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -221,7 +234,7 @@ section.testemunha{
     align-items: center;
 }
 
-div.testemunha-mestre{
+div#testemunha-mestre{
     width: 100%;
     height: 300px;
     margin-top: 90px;
@@ -231,114 +244,124 @@ div.testemunha-mestre{
     justify-content: space-between;
 }
 
-div.testemunha-esquerda, div.testemunha-direita{
+div#testemunha-esquerda, div#testemunha-direita{
     width: 15%;
     height: 300px;
-    cursor: pointer;
+    cursor:pointer ;
 }
 
-div.testemunha-mestre ion-icon{
+div#testemunha-mestre ion-icon{
     width: 90%;
     height: 90%;
-    color: #f03733;
+    color: #F03733;
 }
 
-
-div.testemunha-esquerda ion-icon{
-    opacity: 0.5;
+div#testemunha-esquerda ion-icon{
+    opacity:0.5;
 }
 
-div.testemunha-centro{
+div#testemunha-centro{
     width: 70%;
     margin: 0 auto;
-    height: 400px;
+    height: 300px;
     position: relative;
     max-width: 1010px;
-    overflow: hidden; 
+    overflow: hidden;
+  
 }
 
-div.testemunhos{
+div#testemunhos{
     position: absolute;
     left: 0;
     width: 2680px;
 }
 
-section.testemunha div.testemunha-centro div.testemunhos ul {
+section#testemunha div#testemunha-centro div#testemunhos ul{
     display: inline-table;
+    /* inline-block mesma coisa inline-table */
     width: 300px;
-    background-color: #fff;
+    background: #FFF;
     padding: 30px;
+    margin: 50px 15px;
+    border-radius: 20px;
     border: 1px solid #ccc;
     text-align: center;
-    border-radius: 5px;
-    margin:50px 15px; 
 }
 
-section.testemunha div.testemunha-centro div.testemunhos ul li{
-    list-style: none;
-    display: inline-table;
-    width: 90%;
+section#testemunha div#testemunha-centro div#testemunhos ul li {
+    list-style:none;
+    display:inline-table;
+    width:90%;
     margin: 0;
 }
 
-section.testemunha div.testemunha-centro div.testemunhos ul h5{
+section#testemunha div#testemunha-centro div#testemunhos ul h5{
     font-size: 140%;
 }
 
-section.testemunha div.testemunha-centro div.testemunhos ul p{
+section#testemunha div#testemunha-centro div#testemunhos ul p{
     line-height: 1.5;
     color: #404040;
     font-size: 90%;
 }
 
-section.testemunha div.testemunha-centro div.testemunhos ul img{
+section#testemunha div#testemunha-centro div#testemunhos ul img{
     width: 40%;
     border-radius: 100%;
     margin-top: -80px;
     margin-bottom: 20px;
-    border: 5px solid #f03733;
+    border:5px solid #F03733;
 }
 
-/* SEÇÃO -TRANSICAO 1 */
-div.transicao-testemunha-plano{
+
+/* SECAO -TRANSICAO 1  */
+
+div#transicao-testemunha-plano{
     width: 100%;
     height: 280px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+
 }
 
-.transicao-testemunha-plano .decoracao1{
+div#transicao-testemunha-plano div#decoracao1{
     width: 30%;
     height: 100%;
-    background-image: url(/img/secao13-tomate-manjericao-alho.jpg);
+    background-image: url(../img/secao13-tomate-manjericao-alho.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
+
 }
 
-.transicao-testemunha-plano .decoracao2{
+div#transicao-testemunha-plano div#decoracao2{
     width: 30%;
     height: 100%;
-    background-image: url(/img/secao13-azeite.jpg);
+    background-image: url(../img/secao13-azeite.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-.transicao-testemunha-plano .decoracao3{
-    width: 30%;
-    height: 100%;
-    background-image: url(/img/secao13-detalhe-tomate.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: top center;
     
 }
 
-.plano-principal{
+div#transicao-testemunha-plano div#decoracao3{
+    width: 30%;
+    height: 100%;
+    background-image: url(../img/secao13-detalhe-tomate.jpg);
+    background-repeat: no-repeat;
+    background-position:bottom right;
+    
+}
+
+
+/* secao-planos */
+
+
+section#plano-principal{
     width: 100%;
     height: 800px;
 }
 
-.planos-janela{
+div#planos-janela{
     width: 80%;
     margin: 30px auto;
     display: flex;
@@ -346,13 +369,13 @@ div.transicao-testemunha-plano{
     justify-content: center;
 }
 
-.planos{
+div.planos{
     width: 250px;
     height: 450px;
     margin: 80px 30px;
 }
 
-.planos-top{
+div.planos-top{
     width: 100%;
     height: 350px;
     background-color: #f7f7f7;
@@ -362,83 +385,100 @@ div.transicao-testemunha-plano{
     box-shadow: 2px 2px 3px #ccc;
 }
 
-.planos-bottom{
+div.planos-bottom{
     width: 100%;
     height: 100px;
-    background-color: #07BC31;
+    background-color: #078c31;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 2px 2px 3px #ccc;
     cursor: pointer;
 }
 
+/* footer */
 
-/* FOOTER */
 
-
-div.transicao-plano-rodape {
+div#transicao-plano-rodape{
     width: 100%;
     height: 36px;
-    background-image: linear-gradient(
-        rgba(255,255,255,1),
-        rgba(255,255,255,0.5)),
-        url(../img/secao15-mesa-xadrez-clara.png);
-        background-repeat: repeat-x;
-        margin-top: 100px;
+    background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5)),url(../img/secao15-mesa-xadrez-clara.png);
+    background-repeat: repeat-x;
+    margin-top: 100px;
 }
 
-footer {
+footer{
     padding-top: 36px;
     padding-left: 36px;
     width: 100%;
     height: 500px;
     background-image: url(../img/secao15-mesa-xadrez.png);
     background-repeat: repeat;
-    border-bottom: 10px solid #f03733;
+    border-bottom: 10px solid #F03733;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+
 }
 
-footer div.mapa {
+footer div#mapa{
     width: 35%;
     height: 390px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255,255,255,1);
     box-shadow: 0 3px 10px #404040;
+
 }
 
-footer div.info {
+footer div#info{
     width: 30%;
     height: 390px;
-    background-color: #f03733;
+    background-color: #F03733;
     box-shadow: 0 3px 10px #404040;
+
 }
 
-footer div.redes-sociais {
+footer div#redes-sociais{
     width: 100%;
     height: 70px;
     display: flex;
-    /* flex-flow: row wrap = define que os elementos serão organizados em linha e que quebrarão de linha quando não estiverem cabendo na tela */
+    /* flex-flow:row wrap = define que os elements serao organizados
+     em linha e que quebrarao de linha quando nao estiverem cabendo na tela  */
     flex-flow: row wrap;
-    /* justify-content: space-evenly = aplica um espaçamneto entre os elementos filho pegando o espaço que resta no pai e aplicando uma média entre os elementos */
+    /* justify-content= aplica um espaçamento entre os elementos filho pegando o espaço que resta no pai
+    e aplicando uma media entre os elementos */
     justify-content: space-evenly;
 }
 
-footer div.redes-sociais ion-icon {
-    color: #fff;
+footer div#redes-sociais ion-icon{
+    color: #FFF;
     height: 100%;
     width: 20%;
     cursor: pointer;
 }
 
-footer div.redes-sociais ion-icon:hover {
-    color: #F2B705;
+footer div#redes-sociais ion-icon:hover{
+    color:#F2B705;
 }
 
-footer div.pizza-rodape-decoracao {
+footer div#pizza-rodape-decoracao{
     width: 300px;
     height: 390px;
     margin-top: -100px;
     background-image: url(../img/secao15-pizza-rodape.png);
     background-repeat: no-repeat;
 }
+
+/* footer */
+
+footer div#info ul{
+    margin-left: 15px;
+    margin-bottom: 120px;
+    
+}
+
+footer div#info li{
+    list-style: none;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+
