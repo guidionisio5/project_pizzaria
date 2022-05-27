@@ -54,8 +54,12 @@ header div#chamada h1{
     color:#FFF;
     /* deslocamento-x  deslocamento-y raio de desfoque cor */
     text-shadow: 4px 6px 10px #000;
-    margin-bottom: 55px;
-    
+    /* animation-name= define qual animação será inserida no elemento */
+    animation-name: HeaderH1-moverDireita;
+    /* animation-duration= define o tempo total que a animação irá durar */
+    animation-duration: 2s;
+    /* animation-timing-function= define o tipo de animação que será aplicada no elemento */
+    animation-timing-function: ease-out;
 }
 
 header div#chamada h4{

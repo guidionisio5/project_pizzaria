@@ -1,0 +1,26 @@
+/* animar titulo */
+@keyframes HeaderH1-moverDireita{
+    0%{
+        opacity: 0;
+        /* transform=permite aminar um elemento na tela 
+           translateX = altera a posição do elemento no eixo X */
+        transform: translateX(-75px);
+    }
+
+    70%{
+        transform: translateX(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+/* @keyframes HeaderH4-moverEsquerda{
+    0%{
+        opacity: 0;
+        transform: translateX();
+    }
+} */
